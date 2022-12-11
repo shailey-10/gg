@@ -37,18 +37,13 @@ const Analytics = () => {
 
     const [headings, setHeadings] = useState(elements)
 
-    const searchParams = new URLSearchParams(document.location.search)
-
-    
-        console.log(JSON.parse(searchParams.get('settings')));
-    
+    const searchParams = new URLSearchParams(document.location.search)    
 
 
     useEffect(() => {
         setError(false)
         if(JSON.parse(searchParams.get('settings'))){
           setShowSettings(JSON.parse(searchParams.get('settings')))
-          console.log('setting')
         }
         const cache = localStorage.getItem(`${startDate}-${endDate}`)
       
@@ -96,7 +91,6 @@ const Analytics = () => {
     }
 
     function check(order, col, list, show) {
-      console.log(order)
    
       setError(show)
       if(order.length === 0){

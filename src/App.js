@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import { useState  } from 'react';
 import './App.css';
-
+import Analytics from './components/Analytics';
+import { DisplayContext } from './contexts/displayContext';
 function App() {
+
+  const [hiddenColumns, setHiddenColumns] = useState()
+
   return (
+    <DisplayContext.Provider value={{hiddenColumns, setHiddenColumns}}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Analytics />
     </div>
+    </DisplayContext.Provider>
   );
 }
 

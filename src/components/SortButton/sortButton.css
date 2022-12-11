@@ -1,0 +1,11 @@
+.sortButton {
+transition: 0.5s ease-in-out;
+display: inline-block;
+margin-left: 10px;
+cursor: pointer;
+}
+
+.sortReverse {
+    transform: rotate(180deg);
+
+}

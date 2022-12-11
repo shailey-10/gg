@@ -1,0 +1,67 @@
+.parentAnalytics{
+    text-align: center;
+    padding: 50px 150px;
+}
+
+.rs-picker-toggle-wrapper{
+    width: 40%;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.rs-stack-item svg, .rs-btn{
+    color: rgba(115, 100, 255, 0.755) !important;
+}
+
+ .rs-btn-primary, .rs-calendar-table-cell-selected .rs-calendar-table-cell-content, .rs-calendar-table-cell-selected-end .rs-calendar-table-cell-content{
+    background-color: rgba(115, 100, 255, 0.755) !important;
+    color: #fff !important;
+
+}
+
+.rs-calendar-table-cell-is-today .rs-calendar-table-cell-content{
+    border: 1px solid rgba(115, 100, 255, 0.755) !important;
+    box-shadow: none;
+}
+
+.rs-calendar-table-cell-content:hover{
+    background-color: rgba(115, 100, 255, 0.121) !important;
+    color: #000 !important;
+}
+
+.rs-picker-toggle-value{
+    color: #000 !important;
+}
+
+.settings{
+    display: flex;justify-content: space-between;
+    font-size: 14px;
+}
+
+.settings p{
+    border: 1px solid rgba(115, 100, 255, 0.755);
+    height: fit-content;
+    padding: 8px 20px;
+    border-radius: 8px;
+    color: rgba(115, 100, 255, 0.755);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .settings {
+        display: block;
+    }
+    .parentAnalytics{
+        text-align: left;
+        padding: 20px 
+    }
+    .rs-picker-toggle-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .settings p{
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+  }

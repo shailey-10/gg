@@ -156,7 +156,7 @@ const Table = ({data, list, error, settings}) => {
    
         </table>
         <div className="copy">
-        <CopyToClipboard text={`http://localhost:3000?settings=${JSON.stringify(settings)}&sortKey=${JSON.stringify(sortKey)}
+        <CopyToClipboard text={`https://sparkly-granita-eeaa3e.netlify.app?settings=${JSON.stringify(settings)}&sortKey=${JSON.stringify(sortKey)}
         &range=${JSON.stringify(range)}&sortOrder=${JSON.stringify(sortOrder)}&hiddenColumns=${JSON.stringify(hiddenColumns)}`}
           onCopy={() => setCopied(true)}
           >

@@ -56,7 +56,7 @@ const Analytics = () => {
           const dat = JSON.parse(cache)
           setData(dat)
         }else{
-        fetch(`http://go-dev.greedygame.com/v3/dummy/report?startDate=${startDate}&endDate=${endDate}`)
+        fetch(`https://go-dev.greedygame.com/v3/dummy/report?startDate=${startDate}&endDate=${endDate}`)
         .then((response) => response.json())
   .then((data) => {
     let temp = data.data;

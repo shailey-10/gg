@@ -4,7 +4,7 @@ import Analytics from './components/Analytics';
 import { DisplayContext } from './contexts/displayContext';
 function App() {
 
-  const [hiddenColumns, setHiddenColumns] = useState()
+  const [hiddenColumns, setHiddenColumns] = useState([])
 
   return (
     <DisplayContext.Provider value={{hiddenColumns, setHiddenColumns}}>

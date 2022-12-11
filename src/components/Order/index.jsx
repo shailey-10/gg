@@ -27,8 +27,6 @@ const Order = ({data, cols, onClick, show}) => {
     useEffect(() => {
         if(JSON.parse(searchParams.get('hiddenColumns'))){
             const hidden = (JSON.parse(searchParams.get('hiddenColumns')))
-            console.log(hidden)
-            console.log(data);
             let show =  data
             show = show.filter( function( item ) {
                 for( var i=0, len=hidden.length; i<len; i++ ){
@@ -39,9 +37,8 @@ const Order = ({data, cols, onClick, show}) => {
                 return true;
             });
           
-            console.log(show);
-            console.log(show);
-            const tempList = [
+         
+            let tempList = [
                 {
                     title : 'shown',
                     items: show
@@ -51,6 +48,7 @@ const Order = ({data, cols, onClick, show}) => {
                     items: hidden
                 }
             ]
+
             setList(tempList)
             onClick(tempList[0].items, col, tempList[1].items, false)
           }
